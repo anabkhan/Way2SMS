@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgw"
+    android:gravity="center|center_vertical|right"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="top" >
+
+        <EditText
+            android:id="@+id/mob"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_edittext"
+            android:ems="10"
+            android:hint="Mobile No."
+            android:inputType="number"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textAlignment="center"
+             >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/selectContact"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/con"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginRight="37dp"
+        android:layout_marginTop="41dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_edittext"
+            android:ems="10"
+            android:hint="\nType Your Message Here Message\n\n" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="113dp"
+            android:layout_height="40dp"
+            android:background="@drawable/send1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+</RelativeLayout>
